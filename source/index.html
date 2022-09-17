@@ -1,0 +1,24 @@
+<!--{% set pageId = 0 %}
+{% set permalink = pages[pageId].path %}
+{%- import "./templates/macros.twig" as macros -%}*/
+-->
+<!DOCTYPE html>
+<html class="page" lang="ru">
+{% include "./templates/head.twig" %}
+
+<body class="page__body">
+  {% include "./templates/header.twig" %}
+
+  <main class="page-main">
+
+    <section class="advantages page-main__advantages">
+      <h1>Преимущества нашего питания.</h1>
+    </section>
+
+  </main>
+
+  {% include "./templates/footer.twig" %}
+  <script defer src="./js/main.js" type="module"></script>
+  </body>
+
+</html>
