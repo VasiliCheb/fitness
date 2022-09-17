@@ -157,7 +157,7 @@ export const build = series(
     createSprite,
     copyAssets,
     optimizeImages,
-    createWebp,
+    createWebp
   )
 );
 
@@ -172,8 +172,8 @@ export default series(
     createSprite,
     copyAssets,
     copyImages,
-    createWebp,
-   ),
+    createWebp
+  ),
   series(
     startServer,
     watchFiles

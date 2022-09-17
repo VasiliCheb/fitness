@@ -1,2 +1,44 @@
-<header class="page-header page__wrapper-center">
+<header class="page-header">
+  <div class="page__wrapper-center">
+
+    <div class="page-header__block">
+
+      <a class="page-header__logo logo">
+        <svg role="img" width="89" height="20" aria-label="Логотип фитнес центра «SuperGym».">
+          <use href="./img/logos.svg#logo"></use>
+        </svg>
+      </a>
+
+      <a class="page-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+    </div>
+
+    <div class="page-header__screen">
+      <span>омск</span>
+      <h1>Фитнес<br>центр</h1>
+
+      <ul class="page-header__screen-list">
+        <li class="page-header__screen-item">
+          <p>Тренажёрный зал</p>
+        </li>
+        <li class="page-header__screen-item">
+          <p>Групповые занятия</p>
+        </li>
+        <li class="page-header__screen-item">
+          <p>Кардио-зона</p>
+        </li>
+      </ul>
+
+      <a class="button page-header__screen-button" href="#ticket">Купить абонемент</a>
+
+      <div class="page-header__screen-image">
+        <picture>
+          <source srcset="./img/screen-l@1x.webp, ./img/screen-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+          <source srcset="./img/screen-l@1x.webp, ./img/screen-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+          <source srcset="./img/screen-l@1x.webp, ./img/screen-l@2x.webp 2x" type="image/webp">
+          <!-- 1х: 500px; 2x: 1000px -->
+          <img src="./img/screen-l@1x.jpg" srcset="./img/screen-l@2x.jpg 2x" width="500" height="556" loading="lazy" alt="Приятный спортивный мужчина в стильной майке супергероя, в полумрачном помещении спортивного центра.">
+        </picture>
+      </div>
+    </div>
+  </div>
 </header>
