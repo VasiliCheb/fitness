@@ -20,6 +20,27 @@
   color: var(--color-base-white);
 }
 
+.page h2 {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: var(--color-title);
+  text-transform: uppercase;
+
+  @media (--middle-vp) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (--small-vp) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 .page ul {
   list-style-type: none;
   padding-left: 0;
