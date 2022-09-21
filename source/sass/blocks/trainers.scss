@@ -24,6 +24,17 @@
   gap: 40px;
 }*/
 
+.swiper {
+  //margin: 0 auto;
+  width: 100%;
+  //min-height: 294px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .trainers__slide {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,12 +42,17 @@
   max-width: 260px;
   min-height: 294px;
   /*margin-right: 40px;*/
+  justify-content: center;
 }
 
 .trainers__slide-image {
   background-color: var(--color-bg-img-trainers);
   grid-column: 1 /-1;
   grid-row: 1 / -1;
+}
+
+.trainers__slide-image img {
+  max-width: 100%;
 }
 
 .trainers__slide-title {

@@ -81,6 +81,11 @@ export function copyImages () {
     .pipe(dest("build/img"))
 }
 
+export function copyVendor () {
+  return src("./source/js/vendor/**/*.js")
+    .pipe(dest("build/js/vendor"))
+}
+
 export function createWebp () {
   return src("./source/img/**/*.{jpg,png}")
     .pipe(
@@ -172,7 +177,8 @@ export default series(
     createSprite,
     copyAssets,
     copyImages,
-    createWebp
+    createWebp,
+    copyVendor
   ),
   series(
     startServer,
