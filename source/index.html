@@ -10,27 +10,205 @@
   {% include "./templates/header.twig" %}
 
   <main class="page-main">
+    <h1 class="page__visual-hidden">Главная страница фитнес центра SuperGym.</h1>
+    <section class="presentation page__wrapper-center">
 
-    <section class="gym-presentation page__wrapper-center">
-      <h2>Тренажерный зал</h2>
+      <div class="presentation__wrapper-grid">
 
-      <div class="video" data-source="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+        <div class="presentation__text">
+          <h2>Тренажерный зал</h2>
+          <span>Просторный зал площадью 900 кв/м</span>
+          <div class="presentation__description">
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          </div>
+          <div class="presentation__description presentation__description--hidden">
+            <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+        </div>
 
-        <picture>
-          <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-          <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-          <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp">
-          <!-- 1х: 364px; 2x: 728px -->
-          <img src="./img/cover-video-l@1x.jpg" srcset="./img/cover-video-l@2x.jpg 2x" width="364" height="228" loading="lazy" alt="Обзор спортивного зала SuperGym.">
-        </picture>
+        <div class="presentation-media">
 
-        <div class="video__play">
-          <button class="video__play-button">
-            <span class="page__visual-hidden">Включить видео.</span>
-          </button>
+          <picture>
+            <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+            <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+            <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <img src="./img/presentation-l@1x.jpg" srcset="./img/presentation-l@2x.jpg 2x" width="660" height="401" loading="lazy" alt="Спортивный зал SuperGym.">
+          </picture>
+
+          <div class="video" data-source="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            <picture>
+              <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+              <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp">
+              <!-- 1х: 364px; 2x: 728px -->
+              <img src="./img/cover-video-l@1x.jpg" srcset="./img/cover-video-l@2x.jpg 2x" width="364" height="228" loading="lazy" alt="Обзор спортивного зала SuperGym.">
+            </picture>
+            <div class="video__play">
+              <button class="video__play-button" type="button">
+                <span class="page__visual-hidden">Включить видео.</span>
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
+    <section class="subscription page__wrapper-center" id="subscription">
+
+      <div class="subscription__tabs">
+        <h2>Абонементы</h2>
+
+        <ul class="subscription__tabs-list">
+          <li class="subscription__tabs-item">
+            <button class="subscription__tabs-button" type="button">1 месяц</button>
+          </li>
+          <li class="subscription__tabs-item">
+            <button class="subscription__tabs-button" type="button">6 месяцев</button>
+          </li>
+          <li class="subscription__tabs-item">
+            <button class="subscription__tabs-button" type="button">12 месяцев</button>
+          </li>
+        </ul>
+
+        <div class="subscription__tabs-content tabs-content">
+
+          <div class="tabs-content__cards-group tabs-content__cards-group--month">
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>С&nbsp;тренером</h3>
+              <p>12&nbsp;занятий</p>
+              <div class="subscription-card__currency">
+                <span>5000</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Дневной</h3>
+              <p>с&nbsp;8:00 до&nbsp;17:00</p>
+              <div class="subscription-card__currency">
+                <span>1700</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Полный день</h3>
+              <p>с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="subscription-card__currency">
+                <span>2700</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+          </div>
+
+          <div class="tabs-content__cards-group tabs-content__cards-group--half-year">
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>С&nbsp;тренером</h3>
+              <p>12&nbsp;занятий</p>
+              <div class="subscription-card__currency">
+                <span>25000</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Дневной</h3>
+              <p>с&nbsp;8:00 до&nbsp;17:00</p>
+              <div class="subscription-card__currency">
+                <span>8500</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Полный день</h3>
+              <p>с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="subscription-card__currency">
+                <span>13500</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+          </div>
+
+          <div class="tabs-content__cards-group tabs-content__cards-group--year">
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>С&nbsp;тренером</h3>
+              <p>12&nbsp;занятий</p>
+              <div class="subscription-card__currency">
+                <span>50000</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Дневной</h3>
+              <p>с&nbsp;8:00 до&nbsp;17:00</p>
+              <div class="subscription-card__currency">
+                <span>17000</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
+            </div>
+
+            <div class="tabs-content__cards-item subscription-card">
+              <h3>Полный день</h3>
+              <p>с&nbsp;8:00 до&nbsp;22:00</p>
+              <div class="subscription-card__currency">
+                <span>27000</span>
+                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+              </div>
+              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="competition page__wrapper-center">
+      <div class="competition__container">
+
+        <div class="competition__context">
+          <h2>Super<br>Games</h2>
+          <div class="competition__date">
+            <div class="competition__date-item">
+              <h3>Дата</h3>
+              <span>7</span>
+              <p>Марта<br>2019</p>
+            </div>
+
+            <div class="competition__date-item">
+              <h3>Время</h3>
+              <span>12:00</span>
+            </div>
+          </div>
+
+          <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+
+          <a href="#" class="button competition__button">Заполнить заявку</a>
+        </div>
+
+        <picture>
+          <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+          <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+          <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp">
+          <!-- 1х: 660px; 2x: 1320px -->
+          <img src="./img/competition-l@1x.jpg" srcset="./img/competition-l@2x.jpg 2x" width="660" height="500" loading="lazy" alt="Спортсмен кроссфита с обнаженным торсом отжимается на руках. Сильно ударяет рукой в большое количество магнезии рассыпанной на полу. Магнезия красивыми брызгами разлетается в разные стороны.">
+        </picture>
+
+      </div>
     </section>
 
     <section class="trainers page__wrapper-center">
