@@ -3,6 +3,19 @@
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
+.page-header__screen-text b {
+  margin-top: 0;
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--color-base-white);
+}
+
 .page-header__screen-image {
   display: block;
   width: 100%;

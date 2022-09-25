@@ -17,5 +17,12 @@
 
 .page-footer__wrapper-flex {
   display: flex;
-  justify-content: space-between;
+
+  @media (--not-small-vp) {
+    justify-content: space-between;
+  }
+
+  @media (--small-vp) {
+    flex-direction: column;
+  }
 }

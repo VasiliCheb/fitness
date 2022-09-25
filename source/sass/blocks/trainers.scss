@@ -1,3 +1,7 @@
+.trainers__slider-block {
+  position: relative;
+}
+
 .trainers h3,
 .trainers b {
   font-size: 18px;
@@ -24,13 +28,24 @@
   gap: 40px;
 }*/
 
-.swiper {
+/*.swiper {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 294px;
+}*/
+
+.trainers__swiper {
   //margin: 0 auto;
   width: 100%;
   //min-height: 294px;
 }
 
-.swiper-slide {
+/*.swiper-slide {
+  display: flex;
+  justify-content: center;
+}*/
+
+.trainers__swiper-slide {
   display: flex;
   justify-content: center;
 }
@@ -77,11 +92,4 @@
 .trainers__slide:hover .trainers__slide-title,
 .trainers__slide:active .trainers__slide-title {
   display: none;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #afafaf;
-  width: 16px;
-  height: 32px;
 }

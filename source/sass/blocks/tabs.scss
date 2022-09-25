@@ -1,0 +1,117 @@
+.tabs {
+  width: 100%;
+
+  @media (--middle-vp) {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+}
+
+.tabs__nav {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 59px;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -14px;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @media (--middle-vp) {
+    margin-bottom: 65px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 55px;
+  }
+}
+
+.tabs__button {
+  color: var(--color-button-tab);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: var(--regular-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  user-select: none;
+
+  @media (--middle-vp) {
+    font-size: 18px;
+  }
+
+  @media (--small-vp) {
+    font-size: 16px;
+  }
+
+  &--active {
+    cursor: default;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px;
+    text-decoration-color: var(--color-decoration-underline);
+  }
+}
+
+.tabs__pane {
+  display: none;
+
+  &--show {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+
+    @media (--not-wide-vp) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (--small-vp) {
+      gap: 35px;
+    }
+  }
+}
+
+.tabs__card {
+  background-color: var(--color-base-white);
+  padding: 68px 77px;
+}
+
+.tabs__card-currency img {
+  @media (--small-vp) {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.tabs__card-button {
+  display: grid;
+  color: var(--color-title);
+  border: 2px solid var(--color-title);
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  width: 100%;
+  min-height: 64px;
+  place-items: center;
+}
+
+
+/*.tabs__button:not(.tabs__button--active):hover,
+.tabs__button:not(.tabs__button--active):focus {
+  background-color: #eeeeee;
+}*/

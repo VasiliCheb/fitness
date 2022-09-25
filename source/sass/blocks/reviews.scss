@@ -1,0 +1,24 @@
+.reviews__carousel {
+  position: relative;
+}
+
+.reviews__swiper {
+  width: 50%;
+}
+
+.reviews__swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__slide {
+  width: 100%;
+  min-height: 242px;
+  background-color: var(--color-bg-reviews);
+}
+
+.reviews__slide img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}

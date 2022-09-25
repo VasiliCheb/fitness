@@ -1,0 +1,27 @@
+.form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.form__fieldset label {
+  width: 50%;
+}
+
+.form__fieldset input {
+  width: 100%;
+}
+
+.form__button {
+  background-color: transparent;
+  border: 3px solid var(--color-base-white);
+  border-radius: 0;
+  width: 100%;
+  min-height: 52px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}

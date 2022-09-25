@@ -1,0 +1,40 @@
+.subscription {
+  margin-top: 250px;
+  background-color: var(--color-bg-accent);
+  width: 100%;
+}
+
+.subscription h2 {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.subscription h3 {
+  display: block;
+  color: var(--color-title);
+  font-size: 26px;
+  line-height: 29px;
+
+  @media (--small-vp) {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+}
+
+.subscription span {
+  color: var(--color-price);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+
+  @media (--small-vp) {
+    font-size: 48px;
+  }
+}
+
+.subscription p {
+  color: var(--color-tab-card-text);
+  font-size: 16px;
+  line-height: 150%;
+}

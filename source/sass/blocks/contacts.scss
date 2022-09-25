@@ -1,0 +1,36 @@
+.contacts {
+  @media (--not-small-vp) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacts p,
+.contacts em {
+  font-style: normal;
+  color: var(--color-title);
+}
+
+.contacts em {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media (--not-wide-vp) {
+    font-size: 20px;
+  }
+}
+
+.contacts p {
+  font-size: 14px;
+  line-height: 150%;
+
+  @media (--not-wide-vp) {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}
+
+.contacts a {
+  color: var(--color-title);
+}

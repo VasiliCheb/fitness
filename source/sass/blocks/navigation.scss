@@ -16,7 +16,18 @@
 }
 
 .navigation__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
+
+  @media (--not-small-vp) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (--small-vp) {
+    column-count: 2;
+  }
+}
+
+.navigation__item {
+  min-height: 19px;
 }

@@ -2,8 +2,8 @@ new Swiper('.trainers__swiper', {
 
   //стрелки-кнопки
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.trainers__button-next',
+    prevEl: '.trainers__button-prev',
   },
 
   //отступы между слайдами
@@ -59,6 +59,32 @@ new Swiper('.trainers__swiper', {
     //чувствительность колеса
     sensitivity: 1,
     //Класс на чем будет срабатывать прокрутка мышью
+    eventsTarget: ".swiper-wrapper",
+  }
+});
+
+new Swiper('.reviews__swiper', {
+  loop: true,
+  freeMode: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  watchOverflow: true,
+  autoHeight: true,
+  speed: 800,
+
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
     eventsTarget: ".swiper-wrapper",
   }
 });

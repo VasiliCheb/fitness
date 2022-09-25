@@ -39,24 +39,29 @@
   &::before {
     content: "";
     display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 25px;
-    height: 25px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--color-bg-footer);
   }
 
   &--reddit {
     &::before {
-      background-image: url("../../icons/sprite.svg#social-reddit");
+      mask-image: url("../../icons/sprite.svg#social-reddit");
+      width: 15px;
+      height: 15px;
     }
   }
 
   &--ok::before {
-    background-image: url("../../icons/sprite.svg#social-ok");
+    mask-image: url("../../icons/sprite.svg#social-ok");
+    width: 17px;
+    height: 17px;
   }
 
   &--wk::before {
-    background-image: url("../../icons/sprite.svg#social-wk");
+    mask-image: url("../../icons/sprite.svg#social-wk");
+    width: 16px;
+    height: 16px;
   }
 }
 

@@ -29,8 +29,6 @@
         <div class="presentation-media">
 
           <picture>
-            <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-            <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
             <source srcset="./img/presentation-l@1x.webp, ./img/presentation-l@2x.webp 2x" type="image/webp">
             <!-- 1х: 660px; 2x: 1320px -->
             <img src="./img/presentation-l@1x.jpg" srcset="./img/presentation-l@2x.jpg 2x" width="660" height="401" loading="lazy" alt="Спортивный зал SuperGym.">
@@ -38,8 +36,6 @@
 
           <div class="video" data-source="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
             <picture>
-              <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-              <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
               <source srcset="./img/cover-video-l@1x.webp, ./img/cover-video-l@2x.webp 2x" type="image/webp">
               <!-- 1х: 364px; 2x: 728px -->
               <img src="./img/cover-video-l@1x.jpg" srcset="./img/cover-video-l@2x.jpg 2x" width="364" height="228" loading="lazy" alt="Обзор спортивного зала SuperGym.">
@@ -55,124 +51,120 @@
       </div>
     </section>
 
-    <section class="subscription page__wrapper-center" id="subscription">
-
-      <div class="subscription__tabs">
+    <section class="subscription" id="subscription">
+      <div class="page__wrapper-center">
         <h2>Абонементы</h2>
 
-        <ul class="subscription__tabs-list">
-          <li class="subscription__tabs-item">
-            <button class="subscription__tabs-button" type="button">1 месяц</button>
-          </li>
-          <li class="subscription__tabs-item">
-            <button class="subscription__tabs-button" type="button">6 месяцев</button>
-          </li>
-          <li class="subscription__tabs-item">
-            <button class="subscription__tabs-button" type="button">12 месяцев</button>
-          </li>
-        </ul>
+        <div class="subscription__tabs tabs">
 
-        <div class="subscription__tabs-content tabs-content">
-
-          <div class="tabs-content__cards-group tabs-content__cards-group--month">
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>С&nbsp;тренером</h3>
-              <p>12&nbsp;занятий</p>
-              <div class="subscription-card__currency">
-                <span>5000</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
-            </div>
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Дневной</h3>
-              <p>с&nbsp;8:00 до&nbsp;17:00</p>
-              <div class="subscription-card__currency">
-                <span>1700</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
-            </div>
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Полный день</h3>
-              <p>с&nbsp;8:00 до&nbsp;22:00</p>
-              <div class="subscription-card__currency">
-                <span>2700</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
-            </div>
+          <div class="tabs__nav">
+              <button class="tabs__button tabs__button--active" type="button">1 месяц</button>
+              <button class="tabs__button" type="button">6 месяцев</button>
+              <button class="tabs__button" type="button">12 месяцев</button>
           </div>
 
-          <div class="tabs-content__cards-group tabs-content__cards-group--half-year">
+          <div class="tabs__content">
 
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>С&nbsp;тренером</h3>
-              <p>12&nbsp;занятий</p>
-              <div class="subscription-card__currency">
-                <span>25000</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+            <div class="tabs__pane tabs__pane--show">
+
+              <div class="tabs__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="tabs__card-currency">
+                  <span>5000</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
               </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+
+              <div class="tabs__card">
+                <h3>Дневной</h3>
+                <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="tabs__card-currency">
+                  <span>1700</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Kупить абонемент</a>
+              </div>
+
+              <div class="tabs__card">
+                <h3>Полный день</h3>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="tabs__card-currency">
+                  <span>2700</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
+              </div>
             </div>
 
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Дневной</h3>
-              <p>с&nbsp;8:00 до&nbsp;17:00</p>
-              <div class="subscription-card__currency">
-                <span>8500</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+            <div class="tabs__pane">
+
+              <div class="tabs__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="tabs__card-currency">
+                  <span>25000</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
               </div>
-              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
+
+              <div class="tabs__card">
+                <h3>Дневной</h3>
+                <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="tabs__card-currency">
+                  <span>8500</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Kупить абонемент</a>
+              </div>
+
+              <div class="tabs__card">
+                <h3>Полный день</h3>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="tabs__card-currency">
+                  <span>13500</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
+              </div>
             </div>
 
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Полный день</h3>
-              <p>с&nbsp;8:00 до&nbsp;22:00</p>
-              <div class="subscription-card__currency">
-                <span>13500</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+            <div class="tabs__pane">
+
+              <div class="tabs__card">
+                <h3>С&nbsp;тренером</h3>
+                <p>12&nbsp;занятий</p>
+                <div class="tabs__card-currency">
+                  <span>50000</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
               </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
+
+              <div class="tabs__card">
+                <h3>Дневной</h3>
+                <p>с&nbsp;8:00 до&nbsp;17:00</p>
+                <div class="tabs__card-currency">
+                  <span>17000</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Kупить абонемент</a>
+              </div>
+
+              <div class="tabs__card">
+                <h3>Полный день</h3>
+                <p>с&nbsp;8:00 до&nbsp;22:00</p>
+                <div class="tabs__card-currency">
+                  <span>27000</span>
+                  <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
+                </div>
+                <a href="#" class="button tabs__card-button">Купить абонемент</a>
+              </div>
             </div>
+
           </div>
-
-          <div class="tabs-content__cards-group tabs-content__cards-group--year">
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>С&nbsp;тренером</h3>
-              <p>12&nbsp;занятий</p>
-              <div class="subscription-card__currency">
-                <span>50000</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
-            </div>
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Дневной</h3>
-              <p>с&nbsp;8:00 до&nbsp;17:00</p>
-              <div class="subscription-card__currency">
-                <span>17000</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Kупить абонемент</a>
-            </div>
-
-            <div class="tabs-content__cards-item subscription-card">
-              <h3>Полный день</h3>
-              <p>с&nbsp;8:00 до&nbsp;22:00</p>
-              <div class="subscription-card__currency">
-                <span>27000</span>
-                <img src="../icons/sprite.svg#ruble" alt="Символ рубля" width="42" height="42">
-              </div>
-              <a href="#" class="button subscription-card__button">Купить абонемент</a>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -201,8 +193,6 @@
         </div>
 
         <picture>
-          <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-          <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
           <source srcset="./img/competition-l@1x.webp, ./img/competition-l@2x.webp 2x" type="image/webp">
           <!-- 1х: 660px; 2x: 1320px -->
           <img src="./img/competition-l@1x.jpg" srcset="./img/competition-l@2x.jpg 2x" width="660" height="500" loading="lazy" alt="Спортсмен кроссфита с обнаженным торсом отжимается на руках. Сильно ударяет рукой в большое количество магнезии рассыпанной на полу. Магнезия красивыми брызгами разлетается в разные стороны.">
@@ -214,303 +204,288 @@
     <section class="trainers page__wrapper-center">
       <h2>Тренеры</h2>
 
-      <!--Подключение слайдера библиотека SWIPER-->
-      <div class="trainers__swiper swiper">
-        <div class="swiper-wrapper">
+      <div class="trainers__slider-block">
+        <!--Подключение слайдера библиотека SWIPER-->
+        <div class="trainers__swiper swiper">
+          <div class="swiper-wrapper">
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-pavlova-l@1x.jpg" srcset="./img/trainer-pavlova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-pavlova-l@1x.jpg" srcset="./img/trainer-pavlova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Анна Павлова</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Анна Павлова</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Анна Павлова</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Анна Павлова</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-lavrov-l@1x.jpg" srcset="./img/trainer-lavrov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
-
-              <div class="trainers__slide-title">
-                <h3>Алексей Лавров</h3>
-              </div>
-
-              <div class="trainers__slide-info">
-                <b>Алексей Лавров</b>
-                <i>CrossFit!</i>
-
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-pashkov-l@1x.jpg" srcset="./img/trainer-pashkov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-lavrov-l@1x.jpg" srcset="./img/trainer-lavrov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Александр Пашков</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Алексей Лавров</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Александр Пашков</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Алексей Лавров</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-ketova-l@1x.jpg" srcset="./img/trainer-ketova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-pashkov-l@1x.jpg" srcset="./img/trainer-pashkov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Мария Кетова</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Александр Пашков</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Мария Кетова</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Александр Пашков</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-pavlova-l@1x.jpg" srcset="./img/trainer-pavlova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-ketova-l@1x.jpg" srcset="./img/trainer-ketova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Анна Павлова</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Мария Кетова</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Анна Павлова</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Мария Кетова</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-lavrov-l@1x.jpg" srcset="./img/trainer-lavrov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-pavlova-l@1x.webp, ./img/trainer-pavlova-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-pavlova-l@1x.jpg" srcset="./img/trainer-pavlova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Алексей Лавров</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Анна Павлова</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Алексей Лавров</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Анна Павлова</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-pashkov-l@1x.jpg" srcset="./img/trainer-pashkov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-lavrov-l@1x.webp, ./img/trainer-lavrov-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-lavrov-l@1x.jpg" srcset="./img/trainer-lavrov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Александр Пашков</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Алексей Лавров</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Александр Пашков</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Алексей Лавров</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper-slide">
+            <div class="swiper-slide trainers__swiper-slide">
 
-            <div class="trainers__slide">
-              <div class="trainers__slide-image">
-                <picture>
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                  <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp">
-                  <!-- 1х: 260px; 2x: 520px -->
-                  <img src="./img/trainer-ketova-l@1x.jpg" srcset="./img/trainer-ketova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
-                </picture>
-              </div>
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-pashkov-l@1x.webp, ./img/trainer-pashkov-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-pashkov-l@1x.jpg" srcset="./img/trainer-pashkov-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
 
-              <div class="trainers__slide-title">
-                <h3>Мария Кетова</h3>
-              </div>
+                <div class="trainers__slide-title">
+                  <h3>Александр Пашков</h3>
+                </div>
 
-              <div class="trainers__slide-info">
-                <b>Мария Кетова</b>
-                <i>CrossFit!</i>
+                <div class="trainers__slide-info">
+                  <b>Александр Пашков</b>
+                  <i>CrossFit!</i>
 
-                <ul class="trainers__slide-list">
-                  <li class="trainers__slide-item">
-                    <p>Certified Level&nbsp;3 Trainer</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Победитель чемпионата России по&nbsp;CrossFit</p>
-                  </li>
-                  <li class="trainers__slide-item">
-                    <p>Опыт&nbsp;&mdash; 6 лет</p>
-                  </li>
-                </ul>
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
 
+            <div class="swiper-slide trainers__swiper-slide">
+
+              <div class="trainers__slide">
+                <div class="trainers__slide-image">
+                  <picture>
+                    <source srcset="./img/trainer-ketova-l@1x.webp, ./img/trainer-ketova-l@2x.webp 2x" type="image/webp">
+                    <!-- 1х: 260px; 2x: 520px -->
+                    <img src="./img/trainer-ketova-l@1x.jpg" srcset="./img/trainer-ketova-l@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Tренер фитнес центра SuperGym.">
+                  </picture>
+                </div>
+
+                <div class="trainers__slide-title">
+                  <h3>Мария Кетова</h3>
+                </div>
+
+                <div class="trainers__slide-info">
+                  <b>Мария Кетова</b>
+                  <i>CrossFit!</i>
+
+                  <ul class="trainers__slide-list">
+                    <li class="trainers__slide-item">
+                      <p>Certified Level&nbsp;3 Trainer</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Победитель чемпионата России по&nbsp;CrossFit</p>
+                    </li>
+                    <li class="trainers__slide-item">
+                      <p>Опыт&nbsp;&mdash; 6 лет</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="swiper-button-prev"></div>
-
-        <div class="swiper-button-next"></div>
+        <div class="swiper__button-style swiper__button-style--prev trainers__button-prev"></div>
+        <div class="swiper__button-style swiper__button-style--next trainers__button-next"></div>
 
       </div>
     </section>
@@ -590,8 +565,6 @@
           </div>
 
           <picture>
-            <source srcset="./img/promo-l@1x.webp, ./img/promo-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-            <source srcset="./img/promo-l@1x.webp, ./img/promo-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
             <source srcset="./img/promo-l@1x.webp, ./img/promo-l@2x.webp 2x" type="image/webp">
             <!-- 1х: 280px; 2x: 560px -->
             <img src="./img/promo-l@1x.jpg" srcset="./img/promo-l@2x.jpg 2x" width="280" height="462" loading="lazy" alt="Симпатичная девушка спортивного и стройного сложения на фоне голубого неба.">
@@ -624,21 +597,20 @@
       <h2>Отзывы</h2>
       <div class="reviews__carousel">
 
+        <!--Подключение слайдера библиотека SWIPER-->
         <div class="swiper reviews__swiper">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-              <div class="reviews-card">
+            <div class="swiper-slide reviews__swiper-slide">
+              <div class="reviews__slide">
 
                 <picture>
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
                   <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp">
                   <!-- 1х: 80px; 2x: 160px -->
                   <img src="./img/avatar-user-l@1x.jpg" srcset="./img/avatar-user-l@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Аватарка Анны Орловой.">
                 </picture>
 
-                <div class="reviews-card__text">
+                <div class="reviews__slide-text">
                   <h3>Анна Орлова</h3>
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится,
                     что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал
@@ -649,18 +621,16 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="reviews-card">
+            <div class="swiper-slide reviews__swiper-slide">
+              <div class="reviews__slide">
 
                 <picture>
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
                   <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp">
                   <!-- 1х: 80px; 2x: 160px -->
                   <img src="./img/avatar-user-l@1x.jpg" srcset="./img/avatar-user-l@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Аватарка Анны Орловой.">
                 </picture>
 
-                <div class="reviews-card__text">
+                <div class="reviews__slide-text">
                   <h3>Анна Орлова</h3>
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится,
                     что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал
@@ -671,18 +641,16 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="reviews-card">
+            <div class="swiper-slide reviews__swiper-slide">
+              <div class="reviews__slide">
 
                 <picture>
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                  <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
                   <source srcset="./img/avatar-user-l@1x.webp, ./img/avatar-user-l@2x.webp 2x" type="image/webp">
                   <!-- 1х: 80px; 2x: 160px -->
-                  <img src="./img/avatar-user-l@1x.jpg" srcset="./img/avatar-user-l@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Аватарка Анны Орловой.">
+                  <img src="./img/avatar-user-l@1x.png" srcset="./img/avatar-user-l@2x.png 2x" width="80" height="80" loading="lazy" alt="Аватарка Анны Орловой.">
                 </picture>
 
-                <div class="reviews-card__text">
+                <div class="reviews__slide-text">
                   <h3>Анна Орлова</h3>
                   <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится,
                     что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал
@@ -696,66 +664,70 @@
           </div>
         </div>
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper__button-style swiper__button-style--prev reviews__button-prev"></div>
+        <div class="swiper__button-style swiper__button-style--next reviews__button-next"></div>
+
 
       </div>
     </section>
 
-    <section class="connection page__wrapper-center">
+    <section class="connection">
       <div class="connection__user">
-        <h2>Бесплатное занятие</h2>
+        <div class="page__wrapper-center">
+          <h2>Бесплатное занятие</h2>
 
-        <form class="form" id="user-data" action="https://echo.htmlacademy.ru/." method="get" autocomplete="off">
+          <form class="form" id="user-data" action="https://echo.htmlacademy.ru/." method="get" autocomplete="off">
 
-          <fieldset class="form__fieldset">
-            <legend class="page__visual-hidden">Данные пользователа для заявки:</legend>
+            <fieldset class="form__fieldset">
+              <legend class="page__visual-hidden">Данные пользователа для заявки:</legend>
 
-            <label>
-              <span class="page__visual-hidden">Имя:*</span>
-              <input id="user-name" type="text" name="name" placeholder="Имя" pattern="[a-zA-Zа-яА-Я]+" required minlength="2" maxlength="15">
-            </label>
+              <label>
+                <span class="page__visual-hidden">Имя:*</span>
+                <input id="user-name" type="text" name="name" placeholder="Имя" pattern="[a-zA-Zа-яА-Я]+" required minlength="2" maxlength="15">
+              </label>
 
-            <label>
-              <span class="page__visual-hidden">Телефон:*</span>
-              <input id="user-phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9()+\s-]+" required>
-            </label>
-          </fieldset>
+              <label>
+                <span class="page__visual-hidden">Телефон:*</span>
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9()+\s-]+" required>
+              </label>
+            </fieldset>
 
-          <button class="button form__button" type="submit">отправить</button>
-        </form>
+            <button class="button form__button" type="submit">отправить</button>
+          </form>
+        </div>
       </div>
 
       <div class="connection__contacts">
-        <h2>Контакты</h2>
+        <div class="page__wrapper-center">
+          <h2>Контакты</h2>
 
-        <address class="contacts">
+          <address class="contacts">
 
-          <ul class="contacts__list contacts__list--location">
-            <li class="contacts__item">
-              <em>Адрес:</em>
-              <p>г.&nbsp;Омск, ул. 60 лет Октября, 7</p>
-            </li>
+            <ul class="contacts__list contacts__list--location">
+              <li class="contacts__item">
+                <em>Адрес:</em>
+                <p>г.&nbsp;Омск, ул. 60 лет Октября, 7</p>
+              </li>
 
-            <li class="contacts__item">
-              <em>График работы:</em>
-              <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-            </li>
-          </ul>
+              <li class="contacts__item">
+                <em>График работы:</em>
+                <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+              </li>
+            </ul>
 
-          <ul class="contacts__list contacts__list--communication">
-            <li class="contacts__item">
-              <em>Телефон:</em>
-              <p><a href="tel:88005555555">8-800-555-55-55</a></p>
-            </li>
-            <li class="contacts__item">
-              <em>Email:</em>
-              <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
-            </li>
-          </ul>
+            <ul class="contacts__list contacts__list--communication">
+              <li class="contacts__item">
+                <em>Телефон:</em>
+                <p><a href="tel:88005555555">8-800-555-55-55</a></p>
+              </li>
+              <li class="contacts__item">
+                <em>Email:</em>
+                <p><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+              </li>
+            </ul>
 
-        </address>
-
+          </address>
+        </div>
       </div>
     </section>
 
