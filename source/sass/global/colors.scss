@@ -2,7 +2,9 @@
   --color-base-white: #ffffff;
   --color-base-black: #000000;
   --color-bg-img-screen: #000328;
+  --color-bg-gradient-img-video: rgba(20, 54, 122, 0.5);
   --color-bg-img-trainers: #ccd0de;
+  --color-bg-img-presentation: #d8dbe7;
   --color-bg-footer: #030a1a;
   --color-bg-accent: #f8f9fc;
   --color-button-tab: rgba(16, 38, 84, 0.5);
@@ -10,8 +12,17 @@
   --color-bg-info-trainers: rgba(16, 38, 84, 0.89);
   --color-title: #102654;
   --color-price: #103aae;
+  --color-price-shadow: #e8e8e8;
   --color-tab-card-text: #495a7d;
   --color-accent-text-trainers: #b6bdcc;
   --color-swiper-button: #afafaf;
+  --color-bg-promo-img: #4777e1;
+  --color-bg-competition-img: #000145;
+  --color-bg-action: #ed0233;
   --color-decoration-underline: #d10a42;
+  --conic-gradient-bg-header: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --linear-gradient-video-play: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  --linear-gradient-border-cards: linear-gradient(#d10a42, #00359f 100%);
+  --linear-gradient-button-cards: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  --linear-gradient-text-advantages: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
 }

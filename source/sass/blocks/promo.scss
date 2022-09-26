@@ -1,0 +1,13 @@
+.promo__main-container {
+  background-color: var(--color-bg-action);
+}
+
+.promo__main img {
+  background-color: var(--color-bg-promo-img);
+}
+
+.promo__cards-item {
+  border: solid 7px transparent;
+  border-image: var(--linear-gradient-border-cards);
+  border-image-slice: 1;
+}

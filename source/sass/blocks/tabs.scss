@@ -88,12 +88,19 @@
 .tabs__card {
   background-color: var(--color-base-white);
   padding: 68px 77px;
-}
+  border: solid 7px var(--color-base-white);
 
-.tabs__card-currency img {
-  @media (--small-vp) {
-    width: 33px;
-    height: 33px;
+  //&:focus-within
+
+  &:hover {
+    border-image: var(--linear-gradient-border-cards);
+    border-image-slice: 1;
+
+    .tabs__card-button {
+      color: var(--color-base-white);
+      border: none;
+      background-image: var(--linear-gradient-button-cards);
+    }
   }
 }
 
@@ -109,7 +116,6 @@
   min-height: 64px;
   place-items: center;
 }
-
 
 /*.tabs__button:not(.tabs__button--active):hover,
 .tabs__button:not(.tabs__button--active):focus {

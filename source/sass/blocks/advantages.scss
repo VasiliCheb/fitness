@@ -1,0 +1,20 @@
+.advantages {
+  background: var(--color-bg-accent);
+}
+
+.advantages__item-definition b {
+  display: block;
+  font-family: var(--accent-font);
+  font-size: 71px;
+  line-height: 150%;
+  font-weight: 700;
+  color: transparent;
+  width: fit-content;
+  margin: 0;
+  background: var(--linear-gradient-text-advantages);
+  background-clip: text;
+
+  @media (--not-wide-vp) {
+    font-size: 58px;
+  }
+}

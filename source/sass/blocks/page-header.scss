@@ -1,9 +1,10 @@
 .page-header {
   display: flex;
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background: var(--conic-gradient-bg-header);
 }
 
 .page-header__screen-text b {
+  display: block;
   margin-top: 0;
   font-family: var(--accent-font);
   font-style: normal;

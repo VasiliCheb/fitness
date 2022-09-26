@@ -23,13 +23,48 @@
 }
 
 .subscription span {
-  color: var(--color-price);
-  font-weight: 700;
+  position: relative;
   font-size: 60px;
   line-height: 150%;
+  font-weight: 700;
+  color: var(--color-price);
+  z-index: 1;
+  word-break: break-all;
+
+  &::after {
+    content: attr(data-price-shadow);
+    position: absolute;
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    color: var(--color-price-shadow);
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    transform: translate(calc(-50% + 20px), calc(-50% - 24px));
+    z-index: -1;
+
+    @media (--small-vp) {
+      font-size: 80px;
+      line-height: 120px;
+      transform: translate(calc(-50% + 17px), calc(-50% - 19px));
+    }
+  }
 
   @media (--small-vp) {
     font-size: 48px;
+  }
+}
+
+.subscription img {
+  position: relative;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+
+  @media (--small-vp) {
+    width: 33px;
+    height: 33px;
   }
 }
 
