@@ -5,6 +5,17 @@
   height: 228px;
   background-color: var(--color-base-black);
 
+  @media (--middle-vp) {
+    width: 39.23%;
+    height: auto;
+  }
+
+  @media (--small-vp) {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
   &::after {
     content: "";
     position: absolute;
