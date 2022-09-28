@@ -1,14 +1,14 @@
 .logo svg {
   width: 89px;
-  height: 20px;
+  height: 21px;
 
   @media (--middle-vp) {
     width: 82px;
-    height: 17px;
+    height: 20px;
   }
 
   @media (--small-vp) {
     width: 68px;
-    height: 15px;
+    height: 16px;
   }
 }
