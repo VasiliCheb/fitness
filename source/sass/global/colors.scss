@@ -20,9 +20,12 @@
   --color-bg-competition-img: #000145;
   --color-bg-action: #ed0233;
   --color-decoration-underline: #d10a42;
-  --conic-gradient-bg-header: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --color-decoration-control-underline: rgba(120, 120, 120, 0.2);
+  --conic-gradient-bg-header-wide: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --conic-gradient-bg-header-middle: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  --conic-gradient-bg-header-small: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   --linear-gradient-video-play: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   --linear-gradient-border-cards: linear-gradient(#d10a42, #00359f 100%);
   --linear-gradient-button-cards: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  --linear-gradient-text-advantages: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  --linear-gradient-text-advantages: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
 }

@@ -19,12 +19,12 @@
     content: "";
     position: absolute;
     height: 2px;
-    width: 95%;
+    width: calc(100% - 46px);
     left: 0;
     right: 0;
     margin: 0 auto;
     bottom: -14px;
-    background-color: rgba(120, 120, 120, 0.2);
+    background-color: var(--color-decoration-control-underline);
   }
 
   @media (--middle-vp) {
@@ -37,6 +37,7 @@
 }
 
 .tabs__button {
+  position: relative;
   color: var(--color-button-tab);
   border: none;
   background-color: transparent;
@@ -47,6 +48,9 @@
   font-size: 20px;
   line-height: 150%;
   user-select: none;
+  width: fit-content;
+  padding: 0;
+  margin: 0 23px;
 
   @media (--middle-vp) {
     font-size: 18px;
@@ -58,10 +62,19 @@
 
   &--active {
     cursor: default;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 20px;
-    text-decoration-color: var(--color-decoration-underline);
+    color: var(--color-title);
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: -14px;
+      background-color: var(--color-decoration-underline);
+    }
   }
 }
 

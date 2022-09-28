@@ -2,6 +2,25 @@
   position: relative;
 }
 
+.presentation__text span {
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-title);
+}
+
+.presentation__description {
+  color: var(--color-title);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+
+  &--hidden {
+    @media (--not-wide-vp) {
+      display: none;
+    }
+  }
+}
+
 .presentation-media img {
   background-color: var(--color-bg-img-presentation);
 }
