@@ -1,13 +1,41 @@
 .subscription {
-  //margin-top: 250px;
+  position: relative;
   background-color: var(--color-bg-accent);
   width: 100%;
+  padding-top: 118px;
+  padding-bottom: 120px;
+
+  @media (--not-small-vp) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 470px;
+      height: 494px;
+      background-image: url("../../img/discs-barbell-l@1x.png");
+      background-repeat: no-repeat;
+      background-size: 470px 494px;
+      background-position: center;
+      bottom: -150px;
+      right: -183px;
+    }
+  }
+
+  @media (--middle-vp) {
+    padding-top: 99px;
+  }
+}
+
+.subscription__tabs {
+  position: relative;
+  z-index: 2;
 }
 
 .subscription h2 {
   display: block;
   margin: 0 auto;
   width: fit-content;
+  margin-bottom: 10px;
 }
 
 .subscription h3 {

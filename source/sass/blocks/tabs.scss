@@ -1,5 +1,6 @@
 .tabs {
   width: 100%;
+  padding-top: 25px;
 
   @media (--middle-vp) {
     padding-left: 118px;
@@ -12,7 +13,7 @@
   display: flex;
   width: fit-content;
   margin: 0 auto;
-  margin-bottom: 59px;
+  margin-bottom: 51px;
 
   &::before {
     display: block;
@@ -23,7 +24,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: -14px;
+    bottom: -13px;
     background-color: var(--color-decoration-control-underline);
   }
 
@@ -72,7 +73,7 @@
       width: 100%;
       left: 0;
       right: 0;
-      bottom: -14px;
+      bottom: -13px;
       background-color: var(--color-decoration-underline);
     }
   }
@@ -100,7 +101,7 @@
 
 .tabs__card {
   background-color: var(--color-base-white);
-  padding: 68px 77px;
+  padding: 55px 69px 60px;
   border: solid 7px var(--color-base-white);
 
   //&:focus-within
@@ -117,6 +118,34 @@
   }
 }
 
+.tabs__card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tabs__card p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.tabs__card span {
+  margin-right: 4px;
+}
+
+.tabs__card-currency {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 46px;
+  margin-bottom: 34px;
+}
+
+.tabs__card-currency img {
+  display: block;
+  padding-left: 10px;
+}
+
 .tabs__card-button {
   display: grid;
   color: var(--color-title);
@@ -126,7 +155,7 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   width: 100%;
-  min-height: 64px;
+  min-height: 66px;
   place-items: center;
 }
 
