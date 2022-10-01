@@ -300,6 +300,7 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-bottom: 23px;
+  user-select: none;
 
   @media (--not-wide-vp) {
     display: none;

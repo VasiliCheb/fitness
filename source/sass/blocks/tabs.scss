@@ -3,8 +3,13 @@
   padding-top: 25px;
 
   @media (--middle-vp) {
+    padding-top: 20px;
     padding-left: 118px;
     padding-right: 118px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 13px;
   }
 }
 
@@ -14,6 +19,17 @@
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 51px;
+
+  @media (--middle-vp) {
+    margin-bottom: 58px;
+  }
+
+  @media (--small-vp) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 45px;
+    margin-bottom: 48px;
+  }
 
   &::before {
     display: block;
@@ -26,14 +42,15 @@
     margin: 0 auto;
     bottom: -13px;
     background-color: var(--color-decoration-control-underline);
-  }
 
-  @media (--middle-vp) {
-    margin-bottom: 65px;
-  }
+    @media (--middle-vp) {
+      bottom: -14px;
+    }
 
-  @media (--small-vp) {
-    margin-bottom: 55px;
+    @media (--small-vp) {
+      bottom: -14px;
+      width: 100%;
+    }
   }
 }
 
@@ -55,15 +72,29 @@
 
   @media (--middle-vp) {
     font-size: 18px;
+    margin: 0 27px;
   }
 
   @media (--small-vp) {
     font-size: 16px;
+    margin: 0;
   }
 
   &--active {
     cursor: default;
     color: var(--color-title);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: revert;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
 
     &::before {
       display: block;
@@ -75,7 +106,42 @@
       right: 0;
       bottom: -13px;
       background-color: var(--color-decoration-underline);
+
+      @media (--middle-vp) {
+        bottom: -14px;
+      }
+
+      @media (--small-vp) {
+        bottom: -14px;
+      }
     }
+  }
+}
+
+.tabs__button:not(.tabs__button--active) {
+  &:focus {
+    outline: 2px solid var(--color-title);
+    outline-offset: 3px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-title);
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    color: var(--color-title);
+    opacity: 80%;
+  }
+
+  &:active {
+    color: var(--color-title);
+    opacity: 60%;
   }
 }
 
@@ -104,6 +170,9 @@
   padding: 55px 69px 60px;
   border: solid 7px var(--color-base-white);
 
+  @media (--small-vp) {
+    padding: 43px 34px 47px;
+  }
   //&:focus-within
 
   &:hover {
@@ -130,6 +199,10 @@
 
 .tabs__card span {
   margin-right: 4px;
+
+  @media (--small-vp) {
+    margin-right: 2px;
+  }
 }
 
 .tabs__card-currency {
@@ -139,11 +212,20 @@
   justify-content: center;
   padding-top: 46px;
   margin-bottom: 34px;
+
+  @media (--small-vp) {
+    padding-top: 34px;
+    margin-bottom: 30px;
+  }
 }
 
 .tabs__card-currency img {
   display: block;
   padding-left: 10px;
+
+  @media (--small-vp) {
+    margin-right: -1px;
+  }
 }
 
 .tabs__card-button {
@@ -157,9 +239,32 @@
   width: 100%;
   min-height: 66px;
   place-items: center;
-}
 
-/*.tabs__button:not(.tabs__button--active):hover,
-.tabs__button:not(.tabs__button--active):focus {
-  background-color: #eeeeee;
-}*/
+  @media (--middle-vp) {
+    width: 72%;
+    margin: 0 auto;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-title);
+    outline-offset: -6px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-title);
+    outline-offset: -6px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
