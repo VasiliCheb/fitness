@@ -7,6 +7,7 @@
 
   @media (--middle-vp) {
     padding-top: 98px;
+    padding-bottom: 100px;
   }
 
   @media (--small-vp) {
@@ -39,7 +40,7 @@
       height: 444px;
       background-image: url("../../img/discs-barbell-m@1x.png");
       background-size: 423px 444px;
-      bottom: -105px;
+      bottom: -125px;
       right: -76px;
 
       @media (--x2) {

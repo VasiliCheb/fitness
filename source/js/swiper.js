@@ -12,6 +12,8 @@ new Swiper('.trainers__swiper', {
   // количество слайдов для показа если slidesPerView: auto нужно в CSS слайду сделать ширину тоже аuto
   slidesPerView: 1,
 
+  initialSlide: 2,
+
 
   //Адаптив Ширина экрана
   breakpoints: {
@@ -22,6 +24,7 @@ new Swiper('.trainers__swiper', {
     1200: {
       slidesPerView: 4,
       spaseBetween: 40,
+      initialSlide: 0,
     }
   },
 
