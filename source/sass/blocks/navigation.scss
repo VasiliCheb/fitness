@@ -17,6 +17,7 @@
 
 .navigation__list {
   margin: 0;
+  user-select: none;
 
   @media (--not-small-vp) {
     display: flex;

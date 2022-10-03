@@ -1,9 +1,25 @@
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  @media (--middle-vp) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+
 .reviews__carousel {
   position: relative;
 }
 
 .reviews__swiper {
   width: 50%;
+  box-shadow: 0 0 40px 0 var(--color-shadow-reviews-swiper);
 }
 
 .reviews__swiper-slide {

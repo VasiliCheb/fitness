@@ -32,6 +32,7 @@
 
 .connection__user {
   background-color: var(--color-title);
+  padding-bottom: 70px;
 
   @media (--wide-vp) {
     width: 50%;
@@ -44,6 +45,7 @@
 
 .connection__contacts {
   @media (--wide-vp) {
+    border-top: 1px solid var(--color-border-connection);
     width: 50%;
   }
 }
