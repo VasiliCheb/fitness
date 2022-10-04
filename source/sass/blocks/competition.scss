@@ -109,10 +109,6 @@
   display: grid;
   grid-template-columns: auto auto;
 
-  /*@media (--middle-vp) {
-    grid-template-columns: min-content auto;
-  }*/
-
   &--time {
     padding-top: 3px;
     grid-template-columns: auto;
@@ -173,7 +169,6 @@
     font-size: 10px;
     padding-top: 0;
     margin-left: -9px;
-    //margin-right: auto;
     margin-bottom: 0;
   }
 }

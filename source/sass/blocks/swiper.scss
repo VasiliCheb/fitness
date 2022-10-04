@@ -1,8 +1,4 @@
 .swiper__button-style {
-  /*&::after {
-    color: var(--color-swiper-button);
-    font-size: 30px;
-   }*/
   position: absolute;
   top: 50%;
   width: 37px;
@@ -30,7 +26,6 @@
 
   &--next {
     right: 0;
-    //transform: translate(39px, calc(-50% + 11px));
 
     &::before {
       right: 50%;
@@ -41,7 +36,6 @@
 
   &--prev {
     left: 0;
-    //transform: translate(-39px, calc(-50% + 11px));
 
     &::before {
       left: 50%;

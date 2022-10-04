@@ -1,3 +1,5 @@
+const tabs = document.querySelector('.tabs');
+
 class ItcTabs {
   constructor(target, config) {
     const defaultConfig = {};
@@ -46,4 +48,6 @@ class ItcTabs {
   }
 }
 
+if (tabs) {
 new ItcTabs('.tabs');
+}
