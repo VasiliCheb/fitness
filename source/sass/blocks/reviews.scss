@@ -1,15 +1,28 @@
 .reviews {
-  padding-top: 60px;
+  padding-top: 58px;
   padding-bottom: 120px;
 
   @media (--middle-vp) {
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 100px;
   }
 
   @media (--small-vp) {
-    padding-top: 35px;
-    padding-bottom: 70px;
+    padding-top: 33px;
+    padding-bottom: 69px;
+  }
+}
+
+.reviews h2 {
+  text-align: center;
+  margin-bottom: 51px;
+
+  @media (--middle-vp) {
+    margin-bottom: 41px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 44px;
   }
 }
 
@@ -18,23 +31,110 @@
 }
 
 .reviews__swiper {
-  width: 50%;
+  width: 48.45%;
   box-shadow: 0 0 40px 0 var(--color-shadow-reviews-swiper);
+
+  @media (--middle-vp) {
+    width: 83.5%;
+  }
+
+  @media (--small-vp) {
+    width: 78%;
+  }
 }
 
 .reviews__swiper-slide {
   display: flex;
   justify-content: center;
+
+  @media (--small-vp) {
+    position: relative;
+  }
 }
 
 .reviews__slide {
   width: 100%;
-  min-height: 242px;
   background-color: var(--color-bg-reviews);
+  padding: 63px 63px 40px;
+
+  @media (--not-small-vp) {
+    display: flex;
+    column-gap: 28px;
+  }
+
+  @media (--middle-vp) {
+    padding: 62px 65px 41px;
+  }
+
+  @media (--small-vp) {
+    padding: 40px 0 18px;
+  }
+}
+
+.reviews__slide-text {
+  @media (--small-vp) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.reviews__slide-text h3 {
+  font-size: 20px;
+  margin-top: -6px;
+  margin-bottom: 15px;
+
+  @media (--small-vp) {
+    min-height: 60px;
+    word-wrap: break-word;
+    padding-top: 15.5px;
+    padding-left: 99px;
+    margin-bottom: 13px;
+  }
+}
+
+.reviews__slide-text p {
+  line-height: 140%;
+  margin-top: 0;
+
+  @media (--small-vp) {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
 }
 
 .reviews__slide img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+
+  @media (--small-vp) {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    left: 41px;
+  }
+}
+
+.reviews__button-prev {
+  transform: translate(242px, calc(-50% + 1px));
+
+  @media (--middle-vp) {
+    transform: translate(-3px, calc(-50% + 1px));
+  }
+
+  @media (--small-vp) {
+    transform: translate(-1px, calc(-50% + 1px));
+  }
+}
+
+.reviews__button-next {
+  transform: translate(-242px, calc(-50% + 1px));
+
+  @media (--middle-vp) {
+    transform: translate(3px, calc(-50% + 1px));
+  }
+
+  @media (--small-vp) {
+    transform: translate(1px, calc(-50% + 1px));
+  }
 }

@@ -103,6 +103,29 @@
   @media (--small-vp) {
     margin-top: 18px;
   }
+
+  &:focus {
+    outline: 2px solid var(--color-base-white);
+    outline-offset: 3px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-white);
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .competition__date-item {

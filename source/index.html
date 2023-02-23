@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 {% include "./templates/head.twig" %}
 
-<body class="page__body">
+<body class="page__body page__body--nojs">
   {% include "./templates/header.twig" %}
 
   <main class="page-main">
@@ -56,9 +56,9 @@
         <div class="subscription__tabs tabs">
 
           <div class="tabs__nav">
-              <button class="tabs__button tabs__button--active" type="button">1 месяц</button>
-              <button class="tabs__button" type="button">6 месяцев</button>
-              <button class="tabs__button" type="button">12 месяцев</button>
+              <button class="tabs__button tabs__button--active" type="button" disabled>1 месяц</button>
+              <button class="tabs__button" type="button" disabled>6 месяцев</button>
+              <button class="tabs__button" type="button" disabled>12 месяцев</button>
           </div>
 
           <div class="tabs__content">
@@ -201,7 +201,7 @@
       </div>
     </section>
 
-    <section class="trainers">
+    <section class="trainers" id="trainers">
       <h2>Тренеры</h2>
 
       <div class="trainers__slider-block">
@@ -497,7 +497,7 @@
         <div class="advantages__context">
 
           <div class=" advantages-card advantages__item advantages__item--left">
-            <div class="advantages-card__definition advantages__item-definition">
+            <div class="advantages-card__definition advantages__item-definition advantages__item-definition--area">
               <b>900</b>
               <span>кв/м</span>
             </div>
@@ -549,7 +549,7 @@
       </div>
     </section>
 
-    <section class="promo page__wrapper-center">
+    <section class="promo page__wrapper-center" id="promo">
       <h2>Акции</h2>
 
       <div class="promo__content">
@@ -578,7 +578,7 @@
           <li class="promo__cards-item">
             <div class="promo__card-text">
               <h3>Месяц бесплатно</h3>
-              <p>Приведи&nbsp;друга, получи абонемент в&nbsp;подарок</p>
+              <p>Приведи&nbsp;друга, получи абонемент&nbsp;в&nbsp;подарок</p>
             </div>
             <a class="promo__cards-button" href="#">Подробнее</a>
           </li>
@@ -586,7 +586,7 @@
           <li class="promo__cards-item">
             <div class="promo__card-text">
               <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с&nbsp;командой</p>
+              <p>Корпоративный фитнес&nbsp; с&nbsp;командой</p>
             </div>
             <a class="promo__cards-button" href="#">Подробнее</a>
           </li>
@@ -690,7 +690,7 @@
 
               <label>
                 <span class="page__visual-hidden">Телефон:*</span>
-                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9()+\s-]+" required>
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" pattern="[0-9()+\s-]+" required minlength="10">
               </label>
             </fieldset>
 

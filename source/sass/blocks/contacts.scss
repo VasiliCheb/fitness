@@ -1,7 +1,70 @@
 .contacts {
+  padding-top: 5px;
+  padding-left: 4px;
+  padding-right: 54px;
+
   @media (--not-small-vp) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (--middle-vp) {
+    padding-left: 88px;
+    padding-right: 58px;
+  }
+
+  @media (--small-vp) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.contacts .contacts__list--communication {
+  padding-left: 60px;
+
+  @media (--middle-vp) {
+    padding-left: 48px;
+  }
+
+  @media (--small-vp) {
+    padding-left: 0;
+  }
+}
+
+.contacts__list {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &--location {
+    padding-right: 15px;
+
+    @media (--small-vp) {
+      padding-right: 0;
+    }
+  }
+
+  &--communication {
+    @media (--not-small-vp) {
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: calc(100% - 29px);
+        top: 0;
+        bottom: 17px;
+        left: 0;
+        margin: auto 0;
+        background-color: var(--color-border-contacts);
+
+
+        @media (--middle-vp) {
+          height: calc(100% - 35px);
+          bottom: 19px;
+        }
+      }
+    }
   }
 }
 
@@ -12,9 +75,11 @@
 }
 
 .contacts em {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  margin-bottom: 4px;
 
   @media (--not-wide-vp) {
     font-size: 20px;
@@ -24,13 +89,46 @@
 .contacts p {
   font-size: 14px;
   line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 17px;
 
   @media (--not-wide-vp) {
     font-size: 18px;
     line-height: 152.34%;
   }
+
+  @media (--middle-vp) {
+    margin-bottom: 21px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 21px;
+  }
 }
 
 .contacts a {
   color: var(--color-title);
+
+  &:focus {
+    outline: 1px solid var(--color-title);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-title);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }

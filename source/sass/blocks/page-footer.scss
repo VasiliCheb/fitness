@@ -1,11 +1,11 @@
 .page-footer {
   width: 100%;
   background-color: var(--color-bg-footer);
-  padding-top: 41px;
-  padding-bottom: 42px;
+  padding-top: 43px;
+  padding-bottom: 40px;
 
   @media (--middle-vp) {
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 44px;
   }
 
@@ -24,5 +24,26 @@
 
   @media (--small-vp) {
     flex-direction: column;
+  }
+}
+
+.page-footer__nav {
+  @media (--small-vp) {
+    margin-top: -22px;
+    margin-bottom: 15px;
+  }
+}
+
+.page-footer__social {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (--wide-vp) {
+    margin-top: -2px;
+    margin-right: 1px;
+  }
+
+  @media (--middle-vp) {
+    margin-right: -6px;
   }
 }

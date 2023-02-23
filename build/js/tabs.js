@@ -1,5 +1,12 @@
 const tabs = document.querySelector('.tabs');
 
+document.addEventListener( "DOMContentLoaded" , function() {
+  if (tabs) {
+    tabs.querySelectorAll("[disabled]").forEach(elem => elem.removeAttribute("disabled"));
+  }
+});
+
+
 class ItcTabs {
   constructor(target, config) {
     const defaultConfig = {};

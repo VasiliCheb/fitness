@@ -12,7 +12,7 @@
   flex-direction: column;
 
   @media (--small-vp) {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 }
 
@@ -38,7 +38,8 @@
 
   @media (--small-vp) {
     padding: 38px 55px 42px;
-    margin-bottom: 8px;
+    margin-top: 40px;
+    margin-bottom: 6px;
     box-shadow: -15px 0 0 0 var(--color-bg-advantages-item-main), 15px 0 0 0 var(--color-bg-advantages-item-main);
   }
 }
@@ -94,7 +95,7 @@
 
 
 .advantages-card__description {
-  padding: 22px 0 0 30px;
+  padding: 22px 0 0 29px;
 
   @media (--middle-vp) {
     padding: 13px 5px 5px 30px;

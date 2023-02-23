@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 120px;
+  padding-top: 119px;
   padding-bottom: 60px;
 
   @media (--middle-vp) {
@@ -8,8 +8,21 @@
   }
 
   @media (--small-vp) {
-    padding-top: 70px;
+    padding-top: 67px;
     padding-bottom: 35px;
+  }
+}
+
+.promo h2 {
+  text-align: center;
+  margin-bottom: 52px;
+
+  @media (--middle-vp) {
+    margin-bottom: 41px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 43px;
   }
 }
 
@@ -34,15 +47,20 @@
 }
 
 .promo__main-container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg-action);
   width: 50%;
+  padding: 33px 45px;
 
   @media (--middle-vp) {
-    width: 43%;
+    width: 41.2%;
   }
 
   @media (--small-vp) {
     width: 100%;
+    text-align: center;
+    padding-bottom: 46px;
   }
 }
 
@@ -50,7 +68,7 @@
   width: 50%;
 
   @media (--middle-vp) {
-    width: 57%;
+    width: 58.8%;
     height: 462px;
   }
 
@@ -86,26 +104,52 @@
 }
 
 .promo__cards-item {
+  display: flex;
+  flex-direction: column;
   border: solid 7px transparent;
   border-image: var(--linear-gradient-border-cards);
   border-image-slice: 1;
+  padding: 17px 28px;
+
+  @media (--middle-vp) {
+    min-height: 211px;
+  }
+
+  @media (--small-vp) {
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 27px;
+  }
 }
 
 .promo__main-text h3 {
   font-size: 28px;
   line-height: 156%;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .promo__main-text span {
+  display: block;
   font-weight: 700;
   font-size: 70px;
-  line-height: 156%;
+  line-height: 100%;
+  margin-top: -5px;
+  margin-bottom: 18px;
+
+  @media (--small-vp) {
+    margin-bottom: 14px;
+  }
 }
 
 .promo__main-text p {
   font-size: 18px;
   line-height: 140%;
+  margin-top: 0;
+
+  @media (--small-vp) {
+    margin-bottom: 31px;
+  }
 }
 
 .promo__main-container a {
@@ -117,7 +161,38 @@
   color: var(--color-base-white);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
+  margin-top: auto;
+  margin-bottom: 14px;
+  width: fit-content;
+  user-select: none;
+
+  @media (--small-vp) {
+    margin-bottom: 0;
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-base-white);
+    outline-offset: 8px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-base-white);
+    outline-offset: 8px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .promo__card-text {
@@ -126,14 +201,19 @@
 
 .promo__card-text h3 {
   font-size: 26px;
-  line-height: 150px;
+  line-height: 150%;
   margin-top: 0;
+  margin-bottom: 3px;
 }
 
 .promo__card-text p {
   font-size: 16px;
   line-height: 140%;
   margin-top: 0;
+
+  @media (--small-vp) {
+    margin-bottom: 27px;
+  }
 }
 
 .promo__cards-item a {
@@ -146,6 +226,32 @@
   color: var(--color-text-card-promo);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
-  margin-bottom: 20px;
+  text-underline-offset: 4px;
+  margin-top: auto;
+  margin-bottom: 14px;
+  width: fit-content;
+  user-select: none;
+
+  &:focus {
+    outline: 1px solid var(--color-text-card-promo);
+    outline-offset: 8px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-text-card-promo);
+    outline-offset: 8px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }

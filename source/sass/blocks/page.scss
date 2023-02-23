@@ -70,3 +70,29 @@
     padding: 0 15px;
   }
 }
+
+.page__body--nojs .tabs__pane {
+  display: grid;
+  margin-bottom: 40px;
+}
+
+.page__body--nojs .tabs__button:disabled {
+  cursor: default;
+  color: var(--color-title);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+.page__body--nojs .video__play {
+  display: none;
+}

@@ -45,6 +45,7 @@
 
     @media (--middle-vp) {
       bottom: -14px;
+      width: calc(100% - 53px);
     }
 
     @media (--small-vp) {
@@ -147,21 +148,21 @@
 
 .tabs__pane {
   display: none;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  text-align: center;
+
+  @media (--not-wide-vp) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (--small-vp) {
+    gap: 35px;
+  }
 
   &--show {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    text-align: center;
-
-    @media (--not-wide-vp) {
-      grid-template-columns: 1fr;
-    }
-
-    @media (--small-vp) {
-      gap: 35px;
-    }
   }
 }
 
