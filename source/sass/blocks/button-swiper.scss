@@ -77,3 +77,15 @@
     }
   }
 }
+
+.button-swiper.swiper-button-disabled {
+  cursor: default;
+
+  &:hover {
+    --color-button: var(--color-swiper-button);
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}

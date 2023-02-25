@@ -75,7 +75,7 @@ if (trainerSwiper) {
 
 if (reviewsSwiper) {
   new Swiper('.reviews__swiper', {
-    loop: true,
+    loop: false,
     freeMode: true,
     slidesPerView: 1,
     spaceBetween: 0,

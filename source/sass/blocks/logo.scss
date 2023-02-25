@@ -12,3 +12,16 @@
     height: 16px;
   }
 }
+
+.logo--header svg {
+  width: 122px;
+  height: 28px;
+
+  @media (--middle-vp) {
+    width: 82px;
+  }
+
+  @media (--small-vp) {
+    width: 68px;
+  }
+}
