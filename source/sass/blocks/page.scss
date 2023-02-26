@@ -95,3 +95,23 @@
 .page__body--nojs .video__play {
   display: none;
 }
+
+.page__body--nojs .trainers__swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.page__body--nojs .reviews__swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.page__body--nojs .reviews__swiper {
+  box-shadow: none;
+}
+
+.page__body--nojs .button-swiper {
+  display: none;
+}

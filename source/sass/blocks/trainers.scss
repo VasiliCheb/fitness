@@ -46,7 +46,7 @@
 .trainers h3 {
   display: block;
   width: fit-content;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
 
@@ -93,7 +93,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   max-width: 260px;
-  height: 294px;
   justify-content: center;
 
   @media (--middle-vp) {
@@ -113,6 +112,7 @@
 }
 
 .trainers__slide-image img {
+  display: block;
   width: 260px;
   height: 294px;
 
