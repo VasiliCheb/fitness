@@ -33,7 +33,7 @@
     height: fit-content;
     padding: 33px 120px;
     padding-bottom: 39px;
-    margin: 37px auto 29px;
+    margin: 37px auto 28px;
   }
 
   @media (--small-vp) {
@@ -60,6 +60,7 @@
 
   @media (--middle-vp) {
     line-height: 74px;
+    padding-right: 6px;
     margin: 0;
   }
 
@@ -85,7 +86,7 @@
   @media (--not-wide-vp) {
     font-size: 22px;
     line-height: 33px;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 
   @media (--small-vp) {

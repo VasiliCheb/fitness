@@ -10,22 +10,21 @@
 .page h2 {
   font-family: var(--accent-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 49px;
-  line-height: 49px;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
   letter-spacing: 0.03em;
   color: var(--color-title);
-  text-transform: uppercase;
   margin-top: 0;
 
   @media (--middle-vp) {
     font-size: 42px;
-    line-height: 42px;
+    line-height: 50px;
   }
 
   @media (--small-vp) {
     font-size: 32px;
-    line-height: 32px;
+    line-height: 38px;
   }
 }
 

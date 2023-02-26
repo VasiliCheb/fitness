@@ -38,6 +38,26 @@
     url("../../fonts/alumni-sans-600.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../../fonts/alumni-sans-700.woff2") format("woff2"),
+    url("../../fonts/alumni-sans-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    url("../../fonts/alumni-sans-800.woff2") format("woff2"),
+    url("../../fonts/alumni-sans-800.woff") format("woff");
+}
+
 :root {
   --accent-font: "Alumni Sans", "Impact", sans-serif;
   --regular-font: "Roboto Condensed", "Arial", sans-serif;

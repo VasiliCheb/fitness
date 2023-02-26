@@ -1,33 +1,39 @@
 .trainers {
-  padding: 18px 83px 120px;
+  padding: 18px 83px 91px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @media (--middle-vp) {
-    padding: 19px 86px 100px;
+    max-width: 768px;
+    padding: 20px 86px 100px;
   }
 
   @media (--small-vp) {
-    padding: 19px 30px 70px;
+    max-width: 320px;
+    padding: 13px 30px 70px;
   }
 }
 
 .trainers h2 {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-left: 22px;
   width: fit-content;
 
   @media (--not-wide-vp) {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    padding-right: 6px;
   }
 }
 
 .trainers__slider-block {
   position: relative;
+  max-width: 1250px;
   padding-top: 22px;
 
   @media (--small-vp) {
-    padding-top: 23px;
+    padding-top: 33px;
   }
 }
 
@@ -177,7 +183,7 @@
   }
 
   @media (--small-vp) {
-    transform: translate(-16px, calc(-50% + 11px));
+    transform: translate(-16px, calc(-50% + 17px));
   }
 }
 
@@ -189,6 +195,6 @@
   }
 
   @media (--small-vp) {
-    transform: translate(16px, calc(-50% + 11px));
+    transform: translate(16px, calc(-50% + 17px));
   }
 }

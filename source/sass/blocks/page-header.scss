@@ -1,5 +1,5 @@
 .page-header {
-  padding-top: 51px;
+  padding-top: 38px;
   padding-bottom: 51px;
   background-color: var(--color-bg-screen);
 
@@ -24,7 +24,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: -13px;
 
   @media (--not-wide-vp) {
     display: grid;
@@ -68,10 +67,10 @@
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 9px;
+    padding-right: 1px;
   }
 
   @media (--small-vp) {
-    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     padding-top: 3px;

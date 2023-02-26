@@ -1,28 +1,30 @@
 .promo {
-  padding-top: 119px;
+  padding-top: 149px;
   padding-bottom: 60px;
 
   @media (--middle-vp) {
-    padding-top: 100px;
+    padding-top: 92px;
     padding-bottom: 50px;
   }
 
   @media (--small-vp) {
-    padding-top: 67px;
+    padding-top: 62px;
     padding-bottom: 35px;
   }
 }
 
 .promo h2 {
   text-align: center;
-  margin-bottom: 52px;
+  margin-bottom: 34px;
 
   @media (--middle-vp) {
     margin-bottom: 41px;
+    padding-right: 9px;
   }
 
   @media (--small-vp) {
     margin-bottom: 43px;
+    padding-right: 5px;
   }
 }
 
@@ -118,7 +120,7 @@
   @media (--small-vp) {
     text-align: center;
     padding-top: 29px;
-    padding-bottom: 27px;
+    padding-bottom: 40px;
   }
 }
 
@@ -168,7 +170,7 @@
   user-select: none;
 
   @media (--small-vp) {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 
   &:focus {
@@ -231,6 +233,10 @@
   margin-bottom: 14px;
   width: fit-content;
   user-select: none;
+
+  @media (--small-vp) {
+    margin: 0 auto;
+  }
 
   &:focus {
     outline: 1px solid var(--color-text-card-promo);

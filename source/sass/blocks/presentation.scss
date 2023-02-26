@@ -5,14 +5,21 @@
 }
 
 .presentation__text h2 {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  font-size: 48px;
+  line-height: 58px;
 
   @media (--middle-vp) {
-    margin-bottom: 9px;
+    margin-bottom: 0;
+    font-size: 42px;
+    line-height: 50px;
+    padding-right: 16px;
   }
 
   @media (--small-vp) {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -24,11 +31,11 @@
   margin-bottom: 39px;
 
   @media (--middle-vp) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   @media (--small-vp) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 }
 
@@ -66,12 +73,12 @@
 
   @media (--middle-vp) {
     text-align: center;
-    padding-top: 98px;
+    padding-top: 100px;
     padding-bottom: 16px;
   }
 
   @media (--small-vp) {
-    padding-top: 68px;
+    padding-top: 63px;
     padding-bottom: 70px;
   }
 }
@@ -80,7 +87,7 @@
   margin-left: auto;
   margin-right: 85px;
   max-width: 355px;
-  padding-top: 49px;
+  padding-top: 39px;
 
   @media (--middle-vp) {
     max-width: 100%;
@@ -91,7 +98,7 @@
   @media (--small-vp) {
     max-width: 100%;
     margin: 0;
-    padding: 0 15px 25px;
+    padding: 0 15px 26px;
   }
 }
 

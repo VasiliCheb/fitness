@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 5px;
+  padding-top: 24px;
   padding-left: 4px;
   padding-right: 54px;
 
@@ -9,6 +9,7 @@
   }
 
   @media (--middle-vp) {
+    padding-top: 5px;
     padding-left: 88px;
     padding-right: 58px;
   }
@@ -16,6 +17,7 @@
   @media (--small-vp) {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 3px;
   }
 }
 

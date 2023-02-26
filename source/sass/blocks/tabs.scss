@@ -1,15 +1,15 @@
 .tabs {
   width: 100%;
-  padding-top: 25px;
+  padding-top: 6px;
 
   @media (--middle-vp) {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 118px;
     padding-right: 118px;
   }
 
   @media (--small-vp) {
-    padding-top: 13px;
+    padding-top: 12px;
   }
 }
 

@@ -1,14 +1,14 @@
 .competition {
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 89px;
 
   @media (--middle-vp) {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 80px;
   }
 
   @media (--small-vp) {
-    padding-top: 70px;
+    padding-top: 71px;
     padding-bottom: 50px;
   }
 }
@@ -29,11 +29,11 @@
   column-gap: 50px;
   background-color: var(--color-bg-action);
   width: 43%;
-  padding: 80px 78px 85px;
+  padding: 80px 78px 84px;
 
   @media (--middle-vp) {
     column-gap: 30px;
-    padding: 47px 45px 50px;
+    padding: 46px 45px 50px;
   }
 
   @media (--small-vp) {
@@ -45,17 +45,23 @@
 
 .competition__context h2 {
   color: var(--color-base-white);
-  font-size: 90px;
-  line-height: 90px;
-  letter-spacing: 0.03em;
-  padding-top: 3px;
+  font-size: 82px;
+  line-height: 96%;
+  padding-top: 6px;
   margin-bottom: 0;
   grid-column: 1 / 2;
+  text-transform: uppercase;
+  text-align: center;
 
   @media (--not-wide-vp) {
-    font-size: 52px;
-    line-height: 52px;
-    padding-top: 2px;
+    font-size: 48px;
+    padding-top: 5px;
+    padding-left: 1px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 4px;
+    padding-left: 0;
   }
 }
 
@@ -72,12 +78,12 @@
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
-  padding-top: 8px;
+  padding-top: 11px;
   grid-column: 1 / -1;
 
   @media (--not-wide-vp) {
     font-size: 12px;
-    padding-top: 0;
+    padding-top: 1px;
   }
 }
 

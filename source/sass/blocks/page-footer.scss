@@ -2,7 +2,7 @@
   width: 100%;
   background-color: var(--color-bg-footer);
   padding-top: 43px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
 
   @media (--middle-vp) {
     padding-top: 46px;
@@ -10,8 +10,8 @@
   }
 
   @media (--small-vp) {
-    padding-top: 50px;
-    padding-bottom: 52px;
+    padding-top: 44px;
+    padding-bottom: 51px;
   }
 }
 
@@ -24,6 +24,14 @@
 
   @media (--small-vp) {
     flex-direction: column;
+  }
+}
+
+.page-footer__logo {
+  padding-top: 6px;
+
+  @media (--middle-vp) {
+    padding-top: 0;
   }
 }
 
@@ -45,5 +53,6 @@
 
   @media (--middle-vp) {
     margin-right: -6px;
+    margin-top: -1px;
   }
 }

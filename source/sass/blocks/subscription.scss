@@ -2,16 +2,16 @@
   position: relative;
   background-color: var(--color-bg-accent);
   width: 100%;
-  padding-top: 118px;
+  padding-top: 121px;
   padding-bottom: 120px;
 
   @media (--middle-vp) {
-    padding-top: 98px;
+    padding-top: 101px;
     padding-bottom: 100px;
   }
 
   @media (--small-vp) {
-    padding-top: 68px;
+    padding-top: 63px;
     padding-bottom: 69px;
   }
 
@@ -40,7 +40,7 @@
       height: 444px;
       background-image: url("../../img/discs-barbell-m@1x.png");
       background-size: 347px 444px;
-      bottom: -125px;
+      bottom: -126px;
       right: 0;
 
       @media (--x2) {
@@ -60,6 +60,15 @@
   margin: 0 auto;
   width: fit-content;
   margin-bottom: 10px;
+  padding-right: 5px;
+
+  @media (--middle-vp) {
+    padding-right: 14px;
+  }
+
+  @media (--small-vp) {
+    padding-right: 10px;
+  }
 }
 
 .subscription h3 {
