@@ -1,6 +1,10 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+
+  @media (--not-small-vp) {
+    width: 108px;
+  }
 }
 
 .social__link {
@@ -65,6 +69,8 @@
 }
 
 .social__item {
+  margin-bottom: 7px;
+
   @media (--not-small-vp) {
     margin-left: 11px;
   }

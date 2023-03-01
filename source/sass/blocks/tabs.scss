@@ -20,14 +20,18 @@
   margin: 0 auto;
   margin-bottom: 51px;
 
+  @media (--not-wide-vp) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+  }
+
   @media (--middle-vp) {
     margin-bottom: 58px;
+    gap: 45px;
   }
 
   @media (--small-vp) {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 45px;
     margin-bottom: 48px;
   }
 
@@ -73,7 +77,7 @@
 
   @media (--middle-vp) {
     font-size: 18px;
-    margin: 0 27px;
+    margin: 0 7px;
   }
 
   @media (--small-vp) {

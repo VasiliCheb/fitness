@@ -205,14 +205,25 @@
 .competition__photo {
   background-color: var(--color-bg-competition-img);
   width: 57%;
-  max-height: 500px;
+
+  @media (--wide-vp) {
+    max-height: 500px;
+  }
 
   @media (--middle-vp) {
-    max-height: 292px;
+    height: auto;
   }
 
   @media (--small-vp) {
     width: 100%;
-    min-height: 292px;
+    height: auto;
+  }
+}
+
+.competition__photo img {
+  display: block;
+
+  @media (--not-wide-vp) {
+    object-position: top;
   }
 }

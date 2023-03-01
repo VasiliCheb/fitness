@@ -71,12 +71,12 @@
 
   @media (--middle-vp) {
     width: 58.8%;
-    height: 462px;
+    height: auto;
   }
 
   @media (--small-vp) {
     width: 100%;
-    height: 299px;
+    height: auto;
   }
 }
 

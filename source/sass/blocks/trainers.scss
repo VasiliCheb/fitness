@@ -46,7 +46,7 @@
 .trainers h3 {
   display: block;
   width: fit-content;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   margin-left: auto;
   margin-right: auto;
 
@@ -93,6 +93,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   max-width: 260px;
+  height: 294px;
   justify-content: center;
 
   @media (--middle-vp) {
@@ -104,6 +105,10 @@
     height: 274px;
   }
 }
+
+/*.trainers__slide-info:focus-within {
+  z-index: 1;
+}*/
 
 .trainers__slide-image {
   background-color: var(--color-bg-img-trainers);
@@ -142,6 +147,58 @@
   z-index: -1;
   padding: 51px 20px 20px;
   overflow-y: auto;
+
+  @media (--wide-vp) {
+    scrollbar-color: var(--color-bg-info-trainers) var(--color-bg-img-trainers);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: var(--color-bg-img-trainers);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-bg-info-trainers);
+      box-shadow: inset 1px 1px 2px var(--color-bg-img-trainers);
+      border-radius: 4px;
+
+      &:hover {
+        box-shadow: inset 1px 1px 5px var(--color-bg-img-trainers);
+      }
+    }
+
+    &::-webkit-scrollbar-button:vertical:start:decrement {
+      background:
+        linear-gradient(120deg, var(--color-bg-info-trainers) 40%, var(--color-shadow-reviews-swiper) 41%),
+        linear-gradient(240deg, var(--color-bg-info-trainers) 40%, var(--color-shadow-reviews-swiper) 41%),
+        linear-gradient(0deg, var(--color-bg-info-trainers) 30%, var(--color-shadow-reviews-swiper) 31%);
+      background-color: var(--color-bg-img-trainers);
+
+      &:hover {
+        box-shadow: inset 1px 1px 2px var(--color-bg-img-trainers);
+      }
+
+      &:active {
+        box-shadow: inset 1px 1px 4px var(--color-bg-img-trainers);
+      }
+    }
+
+    &::-webkit-scrollbar-button:vertical:end:increment {
+      background:
+        linear-gradient(300deg, var(--color-bg-info-trainers) 40%, var(--color-shadow-reviews-swiper) 41%),
+        linear-gradient(60deg, var(--color-bg-info-trainers) 40%, var(--color-shadow-reviews-swiper) 41%),
+        linear-gradient(180deg, var(--color-bg-info-trainers) 30%, var(--color-shadow-reviews-swiper) 31%);
+      background-color: var(--color-bg-img-trainers);
+
+      &:hover {
+        box-shadow: inset 1px 1px 2px var(--color-bg-img-trainers);
+      }
+
+      &:active {
+        box-shadow: inset 1px 1px 4px var(--color-bg-img-trainers);
+      }
+    }
+  }
 
   @media (--small-vp) {
     padding-top: 41px;

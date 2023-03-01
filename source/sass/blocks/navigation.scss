@@ -1,8 +1,13 @@
 .navigation {
   padding-left: 61px;
 
+  @media (--wide-vp) {
+    width: 60%;
+  }
+
   @media (--middle-vp) {
     padding-left: 50px;
+    width: 70%;
   }
 
   @media (--small-vp) {
@@ -67,6 +72,7 @@
 
 .navigation__item {
   min-height: 19px;
+  margin-bottom: 10px;
 
   @media (--small-vp) {
     margin-bottom: 21px;

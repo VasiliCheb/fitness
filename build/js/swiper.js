@@ -63,12 +63,12 @@ if (trainerSwiper) {
     },
 
     //управление колесом мыши
-    mousewheel: {
+    /*mousewheel: {
       //чувствительность колеса
       sensitivity: 1,
       //Класс на чем будет срабатывать прокрутка мышью
       eventsTarget: '.trainers__swiper',
-    }
+    }*/
   })
 };
 
