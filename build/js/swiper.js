@@ -19,6 +19,7 @@ if (trainerSwiper) {
 
     initialSlide: 2,
 
+    slideToClickedSlide: true,
 
     //Адаптив Ширина экрана
     breakpoints: {

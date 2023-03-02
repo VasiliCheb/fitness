@@ -46,7 +46,7 @@
 .trainers h3 {
   display: block;
   width: fit-content;
-  margin-bottom: 27px;
+  margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
 
@@ -104,11 +104,16 @@
     max-width: 226px;
     height: 274px;
   }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
 }
 
-/*.trainers__slide-info:focus-within {
+.trainers__slide:focus .trainers__slide-info {
   z-index: 1;
-}*/
+}
 
 .trainers__slide-image {
   background-color: var(--color-bg-img-trainers);

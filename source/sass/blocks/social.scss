@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 
   @media (--not-small-vp) {
-    width: 108px;
+    min-width: 108px;
   }
 }
 

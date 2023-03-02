@@ -1,0 +1,256 @@
+.hall {
+  padding: 120px 0;
+
+  @media (--middle-vp) {
+    padding: 100px 0;
+  }
+
+  @media (--small-vp) {
+    padding: 63px 0 70px;
+  }
+}
+
+.hall__container {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: auto 1fr;
+
+  @media (--middle-vp) {
+    display: block;
+  }
+
+  @media (--small-vp) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.hall__container.page__wrapper-center {
+  @media (--small-vp) {
+    padding: 0;
+  }
+}
+
+.hall__content {
+  max-width: 415px;
+  padding: 39px 0 50px 60px;
+
+  @media (--middle-vp) {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  @media (--small-vp) {
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: left;
+  }
+}
+
+.hall__content h2 {
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 6px;
+  text-align: left;
+
+  @media (--middle-vp) {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-right: 16px;
+  }
+
+  @media (--small-vp) {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}
+
+.hall__content span {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-title);
+  margin-bottom: 40px;
+
+  @media (--middle-vp) {
+    margin-bottom: 33px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 25px;
+  }
+}
+
+.hall__content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-title);
+  margin: 0;
+
+  @media (--not-wide-vp) {
+    display: none;
+
+    &:first-of-type {
+      display: block;
+    }
+  }
+
+  @media (--small-vp) {
+    padding-right: 28px;
+  }
+}
+
+.hall__content p + p {
+  margin-top: 8px;
+}
+
+.hall__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (--middle-vp) {
+    height: 100%;
+    object-position: top;
+  }
+
+  @media (--small-vp) {
+    height: 100%;
+    min-height: 313px;
+    object-position: right;
+  }
+}
+
+.hall__img-container {
+  position: relative;
+
+  padding-bottom: 115px;
+  padding-left: 63px;
+
+  @media (--middle-vp) {
+    padding: 44px 0 83px;
+  }
+
+  @media (--small-vp) {
+    padding: 11px 0 0;
+  }
+}
+
+.hall__img {
+  @media (max-width: 768px) {
+    height: 345px;
+  }
+
+  @media (--small-vp) {
+    min-height: 313px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.hall__video {
+  display: grid;
+  position: absolute;
+  top: 288px;
+  left: 0;
+  z-index: 1;
+  width: 364px;
+  height: 228px;
+
+  @media (--middle-vp) {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    width: 266px;
+    height: 167px;
+    transform: translateX(-50%);
+  }
+
+  @media (--small-vp) {
+    position: relative;
+    left: auto;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+    top: 0;
+  }
+}
+
+.hall__video-player {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-img-presentation);
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.hall__video-img {
+  position: relative;
+  z-index: 1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.hall__video-img img {
+  display: block;
+
+  @media (--middle-vp) {
+    height: 100%;
+  }
+
+  @media (--small-vp) {
+    object-position: top;
+  }
+
+  @media (max-width: 322px) {
+    height: 167px;
+  }
+}
+
+.hall__video.is-show .hall__video-img,
+.hall__video.is-show .hall__video-player {
+  z-index: -1;
+}
+
+.hall__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../../icons/sprite.svg#video-play");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+
+  @media (--not-wide-vp) {
+    width: 73px;
+    height: 73px;
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-size: 80%;
+      outline: none;
+    }
+  }
+}

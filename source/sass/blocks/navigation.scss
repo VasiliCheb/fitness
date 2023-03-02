@@ -1,13 +1,14 @@
 .navigation {
   padding-left: 61px;
 
-  @media (--wide-vp) {
-    width: 60%;
+  @media (--not-small-vp) {
+    display: flex;
+    justify-content: center;
+    width: 70%;
   }
 
   @media (--middle-vp) {
     padding-left: 50px;
-    width: 70%;
   }
 
   @media (--small-vp) {
