@@ -33,18 +33,18 @@
 }
 
 .hall__content {
-  max-width: 415px;
+  width: 415px;
   padding: 39px 0 50px 60px;
 
   @media (--middle-vp) {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 50px;
     text-align: center;
   }
 
   @media (--small-vp) {
-    max-width: 100%;
+    width: 100%;
     padding: 0 15px;
     text-align: left;
   }

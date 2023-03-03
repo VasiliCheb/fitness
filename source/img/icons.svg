@@ -11,10 +11,10 @@
     }
   </style>
 
-  <svg id="ruble" viewBox="0 0 42 42">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5 6H16v11h8.5a5.5 5.5 0 1 0 0-11zM10 0v23h14.5a11.5 11.5 0 1 0 0-23H10z" fill="#102654"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 17h6v6H6v-6z" fill="#102654"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66 28.32V18h6v10.32H27v6H15.66V42h-6v-7.68H6v-6h3.66z" fill="#102654"/>
+  <svg id="ruble" viewBox="0 0 30 42">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11zM4 0v23h14.5a11.5 11.5 0 1 0 0-23H4z" fill="#102654"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17h6v6H0v-6z" fill="#102654"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.66 28.32V18h6v10.32H21v6H9.66V42h-6v-7.68H0v-6h3.66z" fill="#102654"/>
   </svg>
 
 </svg>

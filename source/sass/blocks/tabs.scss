@@ -171,12 +171,16 @@
 }
 
 .tabs__card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-base-white);
   padding: 55px 69px 60px;
   border: solid 7px var(--color-base-white);
+  min-height: 360px;
 
   @media (--small-vp) {
     padding: 43px 34px 47px;
+    min-height: 290px;
   }
 
   &:hover {
@@ -215,20 +219,22 @@
   align-items: center;
   justify-content: center;
   padding-top: 46px;
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 
   @media (--small-vp) {
     padding-top: 34px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 
-.tabs__card-currency img {
-  display: block;
+.tabs__card-currency svg {
   padding-left: 10px;
+  z-index: 1;
 
   @media (--small-vp) {
-    margin-right: -1px;
+    margin-right: -2px;
+    width: 33px;
+    padding-left: 9px;
   }
 }
 
@@ -243,6 +249,7 @@
   width: 100%;
   min-height: 66px;
   place-items: center;
+  margin-top: auto;
 
   @media (--middle-vp) {
     width: 72%;

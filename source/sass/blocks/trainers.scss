@@ -1,5 +1,5 @@
 .trainers {
-  padding: 18px 83px 91px;
+  padding: 18px 50px 91px;
   max-width: 1366px;
   margin: 0 auto;
 
@@ -17,7 +17,7 @@
 .trainers h2 {
   display: block;
   margin-bottom: 25px;
-  margin-left: 22px;
+  margin-left: 55px;
   width: fit-content;
 
   @media (--not-wide-vp) {
@@ -29,8 +29,10 @@
 
 .trainers__slider-block {
   position: relative;
-  max-width: 1250px;
+  max-width: 1200px;
   padding-top: 22px;
+
+  margin: 0 auto;
 
   @media (--small-vp) {
     padding-top: 33px;
