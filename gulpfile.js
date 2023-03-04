@@ -82,7 +82,7 @@ export function copyImages () {
 }
 
 export function copyVendor () {
-  return src("./source/js/vendor/**/*.js")
+  return src("./source/js/vendor/*.js")
     .pipe(dest("build/js/vendor"))
 }
 
