@@ -70,11 +70,6 @@ export function processScripts () {
     .pipe(browser.stream());
 }
 
-//export function copyVendor () {
-//  return src("./source/js/vendor/*.js")
-//    .pipe(dest("build/js/vendor"))
-//}
-
 export function optimizeImages () {
   return src("./source/img/**/*.{png,jpg}")
     .pipe(squoosh())
@@ -178,7 +173,6 @@ export default series(
     copyAssets,
     copyImages,
     createWebp,
-    //copyVendor
   ),
   series(
     startServer,
