@@ -1,4 +1,4 @@
-import './swiper-main.js';
+import './vendor/swiper-main.js';
 import {initVideo} from './video-play.js';
 import './tabs.js';
 

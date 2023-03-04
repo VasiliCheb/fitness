@@ -65,10 +65,15 @@ export function processStyles () {
 }
 
 export function processScripts () {
-  return src("./source/js/*.js")
+  return src("./source/js/**/*.js")
     .pipe(dest("./build/js"))
     .pipe(browser.stream());
 }
+
+//export function copyVendor () {
+//  return src("./source/js/vendor/*.js")
+//    .pipe(dest("build/js/vendor"))
+//}
 
 export function optimizeImages () {
   return src("./source/img/**/*.{png,jpg}")
@@ -79,11 +84,6 @@ export function optimizeImages () {
 export function copyImages () {
   return src("./source/img/**/*.{png,jpg}")
     .pipe(dest("build/img"))
-}
-
-export function copyVendor () {
-  return src("./source/js/vendor/*.js")
-    .pipe(dest("build/js/vendor"))
 }
 
 export function createWebp () {
@@ -178,7 +178,7 @@ export default series(
     copyAssets,
     copyImages,
     createWebp,
-    copyVendor
+    //copyVendor
   ),
   series(
     startServer,
