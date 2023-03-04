@@ -1,8 +1,10 @@
-const trainerSwiper = document.querySelector('.trainers__swiper');
-const reviewsSwiper = document.querySelector('.reviews__swiper');
+//import Swiper from './swiper-bundle';
+
+//const trainerSwiper = document.querySelector('.trainers__swiper');
+//const reviewsSwiper = document.querySelector('.reviews__swiper');
 
 
-if (trainerSwiper) {
+//if (trainerSwiper) {
   new Swiper('.trainers__swiper', {
 
     //стрелки-кнопки
@@ -70,11 +72,11 @@ if (trainerSwiper) {
       //Класс на чем будет срабатывать прокрутка мышью
       eventsTarget: '.trainers__swiper',
     }*/
-  })
-};
+  });
+//};
 
 
-if (reviewsSwiper) {
+//if (reviewsSwiper) {
   new Swiper('.reviews__swiper', {
     loop: false,
     freeMode: true,
@@ -99,5 +101,7 @@ if (reviewsSwiper) {
       sensitivity: 1,
       eventsTarget: '.reviews__swiper',
     }
-  })
-};
+  });
+//};
+
+//export {swiper, carousel};
